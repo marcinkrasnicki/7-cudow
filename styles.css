@@ -1,0 +1,143 @@
+/* Ogólne */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    animation: fadeIn 2s infinite;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Galeria */
+.gallery-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gallery-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gallery-slider {
+    display: flex;
+    width: 300%;
+    animation: slide 10s infinite;
+}
+
+.gallery-slider img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+
+
+/* Tablet (od 600px do 1200px) */
+@media (max-width: 1200px) {
+    header .logo {
+        font-size: 1.8em;
+    }
+
+}
+/* Responsywność */
+@media (max-width: 600px) {
+    .gallery-slider img {
+        max-width: 100%;
+    }
+}
+table {
+    width: 100%;
+    border-collapse: collapse; /* Zapewnia, że komórki będą miały wspólne obramowanie */
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #333; /* Obramowanie komórek */
+    padding: 10px;
+    text-align: left; /* Wyrównanie tekstu do lewej */
+}
+
+th {
+    background-color: #f2f2f2; /* Kolor tła nagłówków */
+    font-weight: bold; /* Pogrubienie tekstu w nagłówkach */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Kolor tła dla parzystych wierszy */
+}
+
+/* Lista punktowana */
+.interesting-facts ul {
+    list-style-type: disc; /* Punktory w kształcie kółek */
+    padding-left: 20px; /* Wcięcie dla listy */
+}
+
+.interesting-facts li {
+    font-size: 1.1em;
+    margin-bottom: 10px; /* Odstęp między punktami listy */
+    line-height: 1.6; /* Większa przestrzeń między wierszami */
+}
+video{
+    margin: 10px;
+}
+h2{
+    margin: 10px;
+}
+
+#kontakt{
+ margin: 10px;   
+}
+
+iframe{
+    margin: 10px;
+}
