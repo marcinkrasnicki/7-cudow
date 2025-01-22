@@ -1,0 +1,411 @@
+/* Ogólne */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 10000px;
+    margin: 0 auto;
+    
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    animation: fadeIn 2s infinite;
+    text-align: left;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    
+    
+}
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* Responsywność */
+@media screen and (max-width: 600px) {
+    .header-container {
+        flex-direction: column; /* Zmiana układu na kolumnowy */
+        align-items: center;
+        text-align: center;
+    }
+        
+    }
+
+    @media screen and (max-width: 1200px) {
+        .menu ul {
+flex-direction: column;
+
+
+        }
+    }
+
+
+    @media screen and (max-width: 600px) {
+        #kontakt{
+            clear: both;
+            
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #opis{
+           
+            float: left;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .interesting-facts{
+            clear: both;  
+            width: 100%;
+            margin: 10px;
+            
+          }
+
+
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .media-container {
+            width: 100%;
+            clear: both; 
+            
+           
+            
+        
+       
+    }
+
+    .map-container iframe {
+        width: 100%;
+        max-width: 1000px; 
+        height: 350px;
+    }
+
+    } 
+
+    @media screen and (min-width: 600px) and ( max-width: 1200px) {
+        #opis{
+           
+            float: left;
+            width: 50%;
+            
+        }
+    }
+
+    @media screen and (min-width: 600px) and ( max-width: 1200px) {
+        .interesting-facts{
+            float: left; 
+            width: 45%;
+            margin: 10px;
+           
+            
+            
+            
+            
+          }
+        }
+
+        @media screen and (min-width: 600px) and ( max-width: 1200px) {
+            .media-container {
+                width: 100%;
+                clear: both;  
+                
+                
+            
+           
+        }
+    
+        .map-container iframe {
+            width: 100%;
+            max-width: 1000px; 
+            height: 350px;
+        }
+    
+        } 
+
+        
+
+        
+        
+    
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Zapewnia, że komórki będą miały wspólne obramowanie */
+    margin-top: 20px;
+}
+#opis{
+    margin: 10px;
+    max-width: 100%;
+    float: left;
+    
+    max-height: 100%;
+    
+    
+    
+    
+    
+}
+
+th, td {
+    border: 1px solid #333; /* Obramowanie komórek */
+    padding: 10px;
+    text-align: left; /* Wyrównanie tekstu do lewej */
+}
+
+th {
+    background-color: #f2f2f2; /* Kolor tła nagłówków */
+    font-weight: bold; /* Pogrubienie tekstu w nagłówkach */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Kolor tła dla parzystych wierszy */
+}
+
+/* Lista punktowana */
+.interesting-facts ul {
+    list-style-type: disc; /* Punktory w kształcie kółek */
+    padding-left: 20px; /* Wcięcie dla listy */
+}
+
+.interesting-facts li {
+    font-size: 1.1em;
+    margin-bottom: 10px; /* Odstęp między punktami listy */
+    line-height: 1.6; /* Większa przestrzeń między wierszami */
+}
+video{
+    margin: 10px;
+}
+h2{
+    margin: 10px;
+}
+
+#kontakt{
+ margin: 10px;   
+ clear: both;
+}
+
+
+
+/* Stylizacja kontenera dla mapy i filmu */
+.media-container {
+    
+   display: flex;
+    
+    gap: 20px; 
+    min-height: 380px;
+  
+  max-width: 100%;
+    height: 380px;
+    
+    
+    
+}
+
+/* Kontener mapy */
+.map-container iframe {
+    width: 40%;
+    max-width: 100%; 
+    height: 250px;
+    float: left;
+margin: 10px;
+   
+}
+
+/* Kontener wideo */
+.video-container iframe {
+    width: 40%;
+    max-width: 100%; 
+    height: 250px;
+    float: left;
+    
+}
+
+.map-container iframe,
+    .video-container iframe {
+        max-width: 100%; /* Zmniejszenie szerokości do 100% */
+    }
+
+
+    * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.interesting-facts{
+  float: left;  
+  max-width: 1000px;
+  margin: 10px;
+  
+  
+  max-height: 100%;
+  min-height: 380px;
+  
+  
+  
+
+  
+}
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0078d7;
+    text-transform: uppercase;
+    animation: logoAnimation 3s ease-in-out infinite;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animacja przy najechaniu kursorem */
+.logo:hover {
+    transform: scale(1.1);
+    color: #ff5722;
+}
+
+/* Kluczowe klatki animacji */
+@keyframes logoAnimation {
+    0% {
+        transform: translateX(-10px);
+        color: #0078d7;
+    }
+    50% {
+        transform: translateX(10px);
+        color: #00c853;
+    }
+    100% {
+        transform: translateX(-10px);
+        color: #0078d7;
+    }
+}
+
+
